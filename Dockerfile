@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:2.3.0-gpu-jupyter
+FROM tensorflow/tensorflow:2.4.1-gpu-jupyter
 #FROM tensorflow/tensorflow:latest-gpu-py3-jupyter
 LABEL maintainer "hirokiyokoyama <h-yokoyama@craft-server.co.jp>"
 RUN apt-get update && DEBIAN_FRONTEND="noninteractive" TZ="Asia/Bangkok" apt-get install -y tzdata ffmpeg libsm6 wget git zip unzip nodejs npm python-tk protobuf-compiler build-essential gcc g++ cmake
